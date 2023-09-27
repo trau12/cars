@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+<body>  
+
+    <section id="header">
+        <a class="logo" href="index.html"><img src="logo.png" alt="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li class="mega-menu-item">
+                    <a href="#" id="mega-menu-link">Inventory</a> 
+                    <ul class="inventory">
+                        <li><a href="allCars.html">All</a></li>
+                        <li><a href="#" class="new">New</a></li>
+                        <li><a href="#" class="used">Used</a></li>
+                        <li><a href="#" class="sold">Sold</a></li>
+                    </ul>
+                </li>
+                <li id="mega-brand">
+                    <a href="#">Brands</a>
+                    <ul class="mega-sub-brand">
+                        <li class="mega-item-brand">
+                            <ul class="brands" >
+                                <li class="a">
+                                    <span>A</span>
+                                    <a href="aston-martin.html"><strong>ASTON MARTIN</strong></a>
+                                    <a href="audi.html"><strong>AUDI</strong></a>
+                                </li>
+                                <li class="b">
+                                    <span>B</span>
+                                    <a href="bentley.html"><strong>BENTLEY</strong></a>
+                                    <a href="bmw.html"><strong>BMW</strong></a>
+                                    <a href="bugatti.html"><strong>BUGATTI</strong></a>
+                                </li>
+                                <li class="c">
+                                    <span>C</span>
+                                    <a href="cadillac.html"><strong>CADILLAC</strong></a>
+                                    <a href="chevrolet.html"><strong>CHEVROLET</strong></a>
+                                </li>
+                                <li class="d">
+                                    <span>D</span>
+                                    <a href="dizayn-vip.html"><strong>DIZAYN VIP</strong></a>
+                                    <a href="donkervoonrt.html"><strong>DONKERVOONRT</strong></a>
+                                </li>
+                                <li class="f">
+                                    <span>F</span>
+                                    <a href="ferrari.html"><strong>FERRARI</strong></a>
+                                    <a href="ford.html"><strong>FORD</strong></a>
+                                </li>
+                                <li class="g">
+                                    <span>G</span>
+                                    <a href="genesis.html"><strong>GENESIS</strong></a>
+                                    <a href="gmc.html"><strong>GMC</strong></a>
+                                </li>
+                                <li class="h">
+                                    <span>H</span>
+                                    <a href="folder_waves/waves.html"><strong>HONDA</strong></a>
+                                    <a href="hummer.html"><strong>HUMMER</strong></a>
+                                </li>
+                                <li class="j">
+                                    <span>J</span>
+                                    <a href="jaguar.html"><strong>JAGUAR</strong></a>
+                                </li>
+                                <li class="k">
+                                    <span>K</span>
+                                    <a href="koenigsegg"><strong>KOENIGSEGG</strong></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="ri-shopping-cart-line"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="slideShow">
+        <!-- <img id="img" onclick="changeImgs()" width="100%" src="slideshow/img1.jpg">    -->
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+
+            <div class="slide first"> 
+                <img src="slideshow/img1.jpg" alt="img1">
+            </div>
+            <div class="slide">
+                <img src="slideshow/img2.jpg" alt="img2">
+            </div>
+            <div class="slide">
+                <img src="slideshow/img3.jpg" alt="img3">
+            </div>
+            <div class="slide">
+                <img src="slideshow/img4.jpg" alt="img4">
+            </div>
+            <div class="slide">
+                <img src="slideshow/img5.jpg" alt="img5">
+            </div>
+            <div class="slide">
+                <img src="slideshow/img6.jpg" alt="img6">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+            </div>
+        </div>     
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <div class="search-car">
+        <a class="search-your-car"><i class="ri-search-line"></i> Search your car</a>
+        <select class="slOption">
+            <option class="tai" >Make</option>
+            <option class="tai" >Wave S</option>
+            <option class="tai" >Merc</option>
+            <option class="tai" >BWM</option>
+            <option class="tai" >Audi</option>
+        </select>
+
+        <select class="slOption">
+            <option class="tai" >All</option>
+            <option class="tai" >New</option>
+            <option class="tai" >Used</option>
+        </select>
+
+        <select class="slOption">
+            <option class="tai" >Year</option>
+            <option class="tai" >2023</option>
+            <option class="tai" >2022</option>
+            <option class="tai" >2021</option>
+            <option class="tai" >2020</option>
+            <option class="tai" >2002</option>
+        </select>
+
+        <button class= "btSearch"> Search </button>
+    </div>
+
+    <section id ="product1" class="section-p1">
+        <h1>New Arrivals</h1>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="folder_waves/waves.html">
+                    <img src="car/waves/w1.jpg">
+                     <div class="des">
+                        <h4>Wave S Tài đi</h4>
+                        <span>USED</span>
+                    </a>    
+                </div>
+            </div>        
+            <div class="pro">
+                <img src="car/speedtail/sp1.jpg">
+                <div class="des">
+                    <h4>McLaren Speedtail</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>          
+            <div class="pro">
+                <img src="car/sian/s1.jpg">
+                <div class="des">
+                    <h4>Lamborghini Sian</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="car/regera/rgr1.jpg">
+                <div class="des">
+                    <h4>Koenigsegg Regera</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>        
+            <div class="pro">
+                <img src="car/rangrover/rr1.jpg">
+                <div class="des">
+                    <h4>Range Rover Autobiography</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>          
+            <div class="pro">
+                <img src="car/huayra/hr1.jpg">
+                <div class="des">
+                    <h4>Pagani Huayra</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>  
+            <div class="pro">
+                <img src="car/g63/g63_1.jpg">
+                <div class="des">
+                    <h4>Mercedes-Benz G63 AMG</h4>
+                    <span>USED</span>
+                </div>
+            </div>        
+            <div class="pro">
+                <img src="car/fe/fe1.jpg">
+                <div class="des">
+                    <h4>Ferrari LaFerrari</h4>
+                    <span>USED</span>
+                </div>
+            </div>          
+            <div class="pro">
+                <img src="car/cullinan/cl1.jpg">
+                <div class="des">
+                    <h4>Rolls Royce Cullinan</h4>
+                    <span>USED</span>
+                </div>
+            </div>        
+            <div class="pro">
+                <img src="car/chiron/b1.jpg">
+                <div class="des">
+                    <h4>Bugatti Chiron</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>          
+            <div class="pro">
+                <img src="car/bentley/bl1.jpg">
+                <div class="des">
+                    <h4>Bentley Flying Spur</h4>
+                    <span class="new">NEW</span>
+                </div>
+            </div>  
+            <div class="pro">
+                <img src="car/911/pc1.jpg">
+                <div class="des">
+                    <h4>Porsche 911</h4>
+                    <span>USED</span>
+                </div>
+            </div>                   
+        </div>
+       <div class="bts-cars">
+        <a href="allCars.html" id="allcars" >
+            <button class="allCars"> View all cars </button>
+        </a>
+       </div>
+    </section>
+
+    <section class="srF">
+        <h1>Showroom Favourites</h1>
+        <div class="content">
+            <img src="car/waves/w2.jpg" alt=Wave S">
+            <div class="paragraph">
+                <h2>Honda Wave S</h2>
+                <p> &nbsp; Chiếc Wave S đầu tiên được Honda cho trình làng vào tháng 05 năm 2017. 
+                    Ngay lập tức, nó được người tiêu dùng Việt Nam đón nhận theo cách vô cùng nồng nhiệt. 
+                    Đó chính là nhờ vào kiểu dáng thanh lịch, nhẹ nhàng nhưng vẫn rất thể thao và mạnh mẽ. 
+                    <br>
+                    <a href="folder_waves/waves.html" class="more-link">
+                        Continue reading
+                    </a>
+                </p>
+
+                <div class ="info">
+                    <a href="folder_waves/waves.html"><i class="ri-eye-line"></i>View details</a>
+                    <a><i class="ri-chat-4-line"></i>Submit Enquiry</a>
+                </div>
+            </div>
+    </section>
+
+    <section class="News">
+        <h1>Latest News</h1> 
+            <div class="car1">
+                <div id="post1">
+                    <div class="entry-thumbnail">
+                        <a href="https://tuoitre.vn/koenigsegg-regera-sieu-xe-
+                        dat-nhat-viet-nam-robot-sieu-em-top-xe-tang-toc-nhanh-nhat-the-gioi-20220309003728038.htm" class="img-responsive">
+                            <img src="car/regera/rgr5.jpg" alt="Regera">
+                        </a>
+                        <div class="newsport-detail">
+                            <a href="https://tuoitre.vn/koenigsegg-regera-sieu-xe-
+                            dat-nhat-viet-nam-robot-sieu-em-top-xe-tang-toc-nhanh-nhat-the-gioi-20220309003728038.htm" class="new-title">
+                            Siêu xe đắt nhất Việt Nam
+                        </a>
+                        </div>
+                    </div>  
+                    <div class="newsport-content">
+                        Chiếc Koenigsegg Regera đầu tiên về Việt Nam có nhiều điểm thú vị, khiến giá bán lại trên thị trường không ngừng tăng kể từ khi ra mắt năm 2015.
+                        <a href="https://tuoitre.vn/koenigsegg-regera-sieu-xe-
+                        dat-nhat-viet-nam-robot-sieu-em-top-xe-tang-toc-nhanh-nhat-the-gioi-20220309003728038.htm" class="read_more">Read more</a>
+                    </div>           
+                </div>
+                <div id="post1">
+                    <div class="entry-thumbnail">
+                        <a href="https://vnexpress.net/bugatti-chiron-profilee-sieu-pham-doc-nhat-the-gioi-4552092.html">
+                            <img src="car/chiron/b5.jpg" alt="Chiron">
+                        </a>
+                        <div class="newsport-detail">
+                            <a href="https://vnexpress.net/bugatti-chiron-profilee-sieu-pham-doc-nhat-the-gioi-4552092.html" class="new-title">
+                            Siêu phẩm độc nhất thế giới
+                        </a>
+                        </div>
+                    </div>  
+                    <div class="newsport-content">
+                        Mẫu siêu xe Pháp được phát triển trong 2 năm, duy nhất một chiếc trên toàn thế giới, được bán đấu giá vào tháng 2/2023.
+                        <a href="https://vnexpress.net/bugatti-chiron-profilee-sieu-pham-doc-nhat-the-gioi-4552092.html" class="read_more">Read more</a>
+                    </div>           
+                </div>
+            </div>
+    </section>
+
+    <section class="footer">
+        <p claas="introduce" >Welcome to Trau Motors. The world's ugliest car showroom and self-voted "World's ugliest supercar dealership".</p>
+        <p class="introduce2">Our Exclusive Brands</p>
+        <ul class="footer-logos">
+            <li><a href="waves.html"><img src="car/waves/logohonda.png" alt="waves"></a></li>
+            <li><a href="#"><img src="car/waves/Abarth-Logo-PNG-2.png" alt="abarth"></a></li>
+       </ul>
+        <div class="social-footer">
+            <ul class="list-follow">
+                <li><a href="https://www.facebook.com/ytssi12121/" class="link fb"><i class="ri-facebook-circle-line"></i></a></li>
+                <li><a href="https://www.instagram.com/tenla_tai?fbclid=IwAR0X0hbaOwm_FFMszJEUJ_92Iwvxm7WQUHS-a6yY6YS2MeG8kBe-ytgAJ1k">
+                    <i class="ri-instagram-line"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCY5Zsy4XEzzwTaABCnCO1ow"><i class="ri-youtube-line"></i></a></li>
+            </ul>
+            <div class="newsletter-form">
+                <p >Lets stay in touch, subscribe to our newsletter
+                <i class="ri-mail-line"></i></p>
+                <input type="email" name ="EMAIL" placeholder="Your email address" required> 
+                <input type="submit" value="Sign up">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; 2023 Trau Motors</p>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
