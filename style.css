@@ -76,12 +76,13 @@ body {
 /* Header Start */
 
 #header {
-    width: 1381px;
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #2e2d2d;
 }
 
 
@@ -89,8 +90,8 @@ body {
     width: 100%;
     list-style: none;    
     display: flex;
-    align-items: center;
-    justify-items: center;
+    /* align-items: center;
+    justify-items: center; */
 }
 
 #navbar ul, #navbar li {
@@ -129,7 +130,7 @@ body {
 #navbar li a:hover {
     background: red;
     border-radius: 10px;
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }
 
 #navbar li:hover ul.inventory {

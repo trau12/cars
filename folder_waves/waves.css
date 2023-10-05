@@ -2,9 +2,234 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', san-serif;
+    color:white;
 }
 
 body {
-    height:100vh;
-    background: blue;
+    background: black;
+    width: 100%;
+    max-width: 1381px;
+}
+.header {
+    box-sizing: border-box;
+    display: flex;
+    height: auto;
+    justify-content: space-between;  
+    align-items: center;
+    border-bottom: 1px solid #2e2d2d;
+    position: relative;
+    background-color: black;
+}
+
+.logo img{
+    width: 100px; 
+    margin-left: 4%;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    /* position: relative; */
+}
+
+.navbar a {
+    padding: 15px 40px;
+    text-decoration: none;
+    color:white;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    display: block;
+} 
+
+.navbar li a:hover {
+    background: red;
+    border-radius: 10px;
+}
+
+.mega-menu {
+    position: absolute;
+    display: none;
+    padding-top: 30px;   
+    background-color: black;
+    border-radius: 10px;
+}
+
+.mega-menu li {
+    width: 100px;
+    height:60px;
+}
+
+.navbar li:hover ul.mega-menu{
+    display:flex;
+}
+
+.mega-menu span{
+    color: red;
+}
+
+.brands {
+    box-sizing: border-box;
+    background-color: black;
+} 
+
+.brands li{
+    display: flex;
+    gap:20px;
+    background-color: black;
+} 
+
+.brands li a {
+   text-align: center;
+}
+
+/* picture */
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.picture img {
+    width: auto;
+    height: auto;
+}
+
+.picture p {
+    color:white;
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* info */
+
+.info {
+    float: left;
+    background: #303438;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+
+.info1 {
+    width: 1172px;
+    margin: auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.info2 {
+    width: 50%;
+    padding-left: 14px;
+}
+
+.info2 h2 {
+    color: red;
+    font-size: 30px;
+    line-height: 60px;
+    border-bottom: 2px solid #636361;
+}
+
+.info p {
+    padding-top:10px;
+}
+
+.info3 {
+    width: 50%;
+    padding-left: 60px;
+}
+
+.info3 table tr th {
+    color: red;
+    font-size: 30px;
+    line-height: 60px;
+    border-bottom: 2px solid #636361;
+    text-align: left;
+}
+
+td {
+    line-height: 30px;
+    padding: 2px 8px;
+}
+
+/* car photos */
+
+.detail-car-slider {
+    max-height: 500px;
+    height: 100%;
+    width: 100%; 
+}
+
+.detail-car-slider h2 {
+    font-size: 30px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper i.button {
+    color:red;
+    font-size: 120px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.wrapper i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+.wrapper i#prev {
+    left:-24px;
+}
+.wrapper i#next {
+    right: -24px;
+}
+
+.image-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
