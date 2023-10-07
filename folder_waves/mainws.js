@@ -4,8 +4,6 @@ const wrapper = document.querySelector(".wrapper"),
   images = carousel.querySelectorAll("img"),
   buttons = document.querySelectorAll(".button");
 
-console.log(wrapper, carousel, images, buttons);
-
 let imageIndex = 1,
   intervalId;
 
@@ -23,3 +21,4 @@ const updateClick = (e) => {
 };
 
 buttons.forEach((button) => button.addEventListener("click", updateClick));
+

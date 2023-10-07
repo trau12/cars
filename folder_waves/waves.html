@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <script src="mainws.js" defer></script>
     <link rel="stylesheet" href="waves.css">
 </head>
@@ -157,6 +158,93 @@
               </div>      
         </div>
     </div>
+
+    <div class="enquiries">
+        <div class="enquiries-form">
+            <h2>Enquiries</h2>
+            <p>For more information or any enquiries, kindly fill the form.</p>
+        </div>
+        <div class="form-group">
+            <div class="form">
+                <span class="name">Full Name</span> <br>
+                <input type="text" placeholder="Please enter your name...">
+            </div>
+            <div class="form">
+                <span class="name">Email Address</span> <br>
+                <input type="text" placeholder="Please enter your email address...">
+            </div>
+            <div class="form">
+                <span class="name">Phone Number</span> <br>
+                <input type="text" placeholder="Please enter your phone number...">
+            </div>
+            <div class="check-box">
+                <input type="checkbox" id="check1" value="1">
+                <label for="check1">Please send me news & updates.</label>
+            </div>
+        </div>
+        <div class="form-2" >
+            <div class="form">
+                <span class="name">Message</span> <br>
+               <textarea name="your-message" class="form-text" cols="40" rows="17" placeholder="Type your message"></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6Lc6B30oAAAAANzAiMQbJuQdyKOWVAeYuONcRrzq"></div>
+            <button type="submid" class="form-submid">Submit Message</button>
+        </div>
+    </div>
+
+    <div class="another-choice">
+        <h1>You may also be interested in</h1>
+        <div class="see-more">
+            <div class="choice">
+                <img src="/cars/car/waves/dream.jpg">
+                <div class="des">
+                    <h4>Dream</h4>
+                    <span>USED</span>
+                </div>
+            </div>
+            <div class="choice">
+                <img src="/cars/car/waves/sh.jpg">
+                <div class="des">
+                    <h4>SH</h4>
+                    <span class="all-new">NEW</span>
+                </div>
+            </div>
+            <div class="choice">
+                <img src="/cars/car/waves/vision.jpg">
+                <div class="des">
+                    <h4>Vision</h4>
+                    <span class="all-new">NEW</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p claas="introduce" >Welcome to Trau Motors. The world's ugliest car showroom and self-voted "World's ugliest supercar dealership".</p>
+        <p class="introduce2">Our Exclusive Brands</p>
+        <ul class="footer-logos">
+            <li><a href="waves.html"><img src="/cars/car/waves/logohonda.png" alt="waves"></a></li>
+            <li><a href="#"><img src="/cars/car/waves/Abarth-Logo-PNG-2.png" alt="abarth"></a></li>
+       </ul>
+        <div class="social-footer">
+            <ul class="list-follow">
+                <li><a href="https://www.facebook.com/ytssi12121/" class="link fb"><i class="ri-facebook-circle-line"></i></a></li>
+                <li><a href="https://www.instagram.com/tenla_tai?fbclid=IwAR0X0hbaOwm_FFMszJEUJ_92Iwvxm7WQUHS-a6yY6YS2MeG8kBe-ytgAJ1k">
+                    <i class="ri-instagram-line"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCY5Zsy4XEzzwTaABCnCO1ow"><i class="ri-youtube-line"></i></a></li>
+            </ul>
+            <div class="newsletter-form">
+                <p >Lets stay in touch, subscribe to our newsletter
+                <i class="ri-mail-line"></i></p>
+                <input type="email" name ="EMAIL" placeholder="Your email address" required> 
+                <input type="submit" value="Sign up">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; 2023 Trau Motors</p>
+        </div>
+    </div>
  
 </body>
 </html>
+
