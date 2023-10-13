@@ -183,11 +183,12 @@ strong {
 }
 
 
+
 /* slideShow */
 
 .slideShow {
-    width: 1381px;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 1381px;
     height: 436px;
     margin-bottom: 50px;
     overflow: hidden;
@@ -207,6 +208,7 @@ strong {
 .slide {
     width: 20%;
     transition: 2s;
+    position: relative;
 }
 
 .slide img {
@@ -218,8 +220,9 @@ strong {
     position: absolute;
     width: 21px;
     display: flex;
-    margin-top: 2px;
-    margin-left: 630px;
+    /* margin-top: 2px;
+    margin-left: 630px; */
+    justify-content: center;
 
 }
 

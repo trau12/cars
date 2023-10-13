@@ -1,4 +1,6 @@
 //slideShow
+
+//<img id="img" onclick="changeImgs()" width="100%" src="slideshow/img1.jpg">  
 // let img = document.getElementById('img');
 
 // var imgs = [
