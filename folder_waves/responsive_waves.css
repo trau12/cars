@@ -1,18 +1,52 @@
 /* PC */
 @media screen and (min-width: 1024px) {
-    
+
 }
 
 
 /* tablet */
 
-@media screen and (min-width: 740px) and (max-width:1023px) {
-    
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .header-content {
+       font-size: 12px;
+    }
+    .navbar a {
+        padding: 5px 20px;
+    }
+    .enquiries {
+        padding: 20px 30px;
+        display: block;
+    }
+    .info2{
+        padding-left: 0;
+    }
+    .enquiries-form,  .enquiries-form h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .check-box{
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .form-group {
+        display: flex;
+    }
+    .form-1{
+        width: 50%;
+    }
+    .form-2{
+        width: 50%;
+    }
+    .form-text{
+        height: 295px;
+    }
 }
 
 
 /* mobile */
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 767px) {
     
 }
